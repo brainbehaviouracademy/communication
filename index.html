@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Talk It Out — a self-paced, interactive communication skills module by Brain Behaviour Academy for high school students. Learn the communication process, channels, barriers, and the keys to being understood." />
+<title>Talk It Out — The Process of Communication | Brain Behaviour Academy</title>
+<link rel="icon" href="assets/bba-logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ===================== TOP BAR ===================== -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <button class="menu-btn" id="menuBtn" aria-label="Open lessons menu">☰ Lessons</button>
+    <a class="brand" href="#" onclick="goto(0);return false;">
+      <img src="assets/bba-logo.png" alt="Brain Behaviour Academy logo">
+      <span class="bt"><b>Talk It Out</b><span>Brain Behaviour Academy</span></span>
+    </a>
+    <div class="topbar-spacer"></div>
+    <div class="topbar-prog" title="Your progress (saved on this device)">
+      <div class="bar"><i id="progBar"></i></div>
+      <small id="progPct">0%</small>
+    </div>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+
+<div class="shell">
+  <!-- ===================== TOC ===================== -->
+  <nav class="toc" id="toc" aria-label="Lessons">
+    <div class="toc-h">Your learning path</div>
+    <ol id="tocList"></ol>
+    <div style="padding:10px 14px 16px;border-top:1px solid var(--line)">
+      <button class="btn btn-ghost" style="width:100%;justify-content:center" onclick="resetAll()">Reset my progress</button>
+    </div>
+  </nav>
+
+  <!-- ===================== MAIN ===================== -->
+  <main id="main">
+
+    <!-- ----- 0 WELCOME ----- -->
+    <section class="lesson active" data-title="Welcome">
+      <div class="card hero">
+        <div class="bubbles">
+          <span class="bb" style="top:14px;left:6%">💬</span>
+          <span class="bb" style="top:60%;left:84%">💭</span>
+          <span class="bb" style="top:40%;left:30%">🗨️</span>
+        </div>
+        <div class="hero-logo">
+          <img src="assets/bba-logo.png" alt="Brain Behaviour Academy logo">
+          <span>Brain Behaviour Academy</span>
+        </div>
+        <div class="eyebrow"><span class="dot"></span>Self-paced module</div>
+        <h2>The Process of Communication</h2>
+        <p class="lead">Turning thoughts into understanding. Communication is a two-way process of sharing ideas, creating meaning, and building connection — and it's a skill you can actually train.</p>
+      </div>
+
+      <div class="card">
+        <h3>What this module is about</h3>
+        <p>Every day you send and receive hundreds of messages — texts, looks, jokes, silences, arguments, apologies. Most of the time it works. Sometimes it goes sideways and you're left thinking <em>"that's not what I meant!"</em></p>
+        <p>This module takes you behind the scenes of how communication actually works: how a thought travels from one mind to another, why it sometimes gets lost on the way, and what skilled communicators do differently. By the end, you'll be able to spot what's going wrong in a conversation and fix it.</p>
+
+        <h3 style="margin-top:24px">You'll learn to</h3>
+        <div class="grid g2">
+          <div class="tile"><span class="ico">🔁</span><h4>Map the loop</h4><p class="small">Follow a message from a thought all the way to being understood — and back again.</p></div>
+          <div class="tile"><span class="ico">📡</span><h4>Pick your channel</h4><p class="small">Know when to talk, text, write, or wait — and why the channel changes the message.</p></div>
+          <div class="tile"><span class="ico">🧱</span><h4>Break barriers</h4><p class="small">Recognise the internal and external blocks that distort what you say and hear.</p></div>
+          <div class="tile"><span class="ico">🔑</span><h4>Use the keys</h4><p class="small">Practise the seven habits that make people feel genuinely understood.</p></div>
+        </div>
+
+        <div class="callout teal" style="margin-top:22px">
+          <b>How it works.</b> Move through the lessons at your own pace. Tap <b>Mark complete</b> at the end of each one to fill your progress bar. Everything saves automatically on this device — close the tab and pick up where you left off.
+        </div>
+
+        <div class="lesson-foot">
+          <span></span>
+          <button class="btn btn-primary" onclick="next()">Start learning →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- 1 WHAT IS COMMUNICATION ----- -->
+    <section class="lesson" data-title="What is communication?">
+      <div class="card">
+        <div class="eyebrow"><span class="dot"></span>Lesson 1</div>
+        <h2>What is communication, really?</h2>
+        <p class="lead">It's not just talking. Communication only happens when your meaning actually arrives in someone else's mind — and theirs arrives in yours.</p>
+
+        <h3 style="margin-top:18px">A two-way street</h3>
+        <p>Picture two brains. One has an idea, a feeling, or some information it wants to share. To get it across, it has to turn that fuzzy inner thing into words, tone, and gestures. The other brain then has to take all that and rebuild the idea inside <em>its own</em> head, using its own experiences and feelings.</p>
+        <p>If both brains end up with roughly the same picture, communication succeeded. If they don't, something got lost in the journey — even if plenty of words were spoken.</p>
+
+        <div class="scene"><b>Scene:</b> You text a friend "k." You mean "okay, sounds good." They read it as "she's annoyed with me." Same two letters, two completely different messages. The words left your phone fine — the <em>meaning</em> is what got scrambled.</div>
+
+        <h3 style="margin-top:18px">Why it matters for you right now</h3>
+        <div class="grid g3">
+          <div class="tile"><span class="ico">🤝</span><h4>Relationships</h4><p class="small">Friendships and family run on being understood — and on repairing things when you're not.</p></div>
+          <div class="tile"><span class="ico">📚</span><h4>Learning</h4><p class="small">Asking a clear question or explaining your thinking is half of doing well in school.</p></div>
+          <div class="tile"><span class="ico">🌱</span><h4>Your future</h4><p class="small">Interviews, teamwork, leadership — almost every path rewards people who can be understood.</p></div>
+        </div>
+
+        <div class="quiz" data-answer="2">
+          <div class="q">Quick check: When has communication actually <em>succeeded</em>?</div>
+          <div class="opts">
+            <div class="opt" data-i="0"><span class="mk">A</span><span>When you've said everything you wanted to say.</span></div>
+            <div class="opt" data-i="1"><span class="mk">B</span><span>When you used big, impressive words.</span></div>
+            <div class="opt" data-i="2"><span class="mk">C</span><span>When the other person ends up with the meaning you intended.</span></div>
+            <div class="opt" data-i="3"><span class="mk">D</span><span>When you spoke louder than everyone else.</span></div>
+          </div>
+          <div class="fb"></div>
+        </div>
+
+        <div class="reflect" data-key="r1">
+          <label>Think about it</label>
+          <p class="small" style="margin:-4px 0 8px">Write about a time your message got "scrambled" like the "k" example. What did you mean, and what did the other person hear?</p>
+          <textarea placeholder="Your thoughts (saved only on this device)…"></textarea>
+          <div class="saved-tag"></div>
+        </div>
+
+        <div class="lesson-foot">
+          <button class="btn btn-ghost" onclick="prev()">← Back</button>
+          <button class="btn btn-primary mark" onclick="markAndNext(this)">Mark complete →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- 2 THE LOOP (SIGNATURE) ----- -->
+    <section class="lesson" data-title="The communication loop">
+      <div class="card">
+        <div class="eyebrow"><span class="dot"></span>Lesson 2</div>
+        <h2>The communication loop</h2>
+        <p class="lead">This is the engine under every conversation. Tap each stage to see what's happening — then press play to watch a message travel the whole loop.</p>
+
+        <div class="loop">
+          <div class="loop-track" id="loopTrack"></div>
+          <div class="loop-fb">
+            <span class="line"></span>Response · Feedback · Clarification — sends it back around<span class="line"></span>
+          </div>
+          <div class="loop-detail" id="loopDetail">
+            <h4>Tap a stage above 👆</h4>
+            <p style="margin:0" class="small">Each one is a step a thought takes on its way from one mind to another. The loop never really ends — every reply starts a new turn.</p>
+          </div>
+          <div style="text-align:center;margin-top:14px">
+            <button class="btn btn-primary" id="playLoop" onclick="playLoop()">▶ Play the loop</button>
+          </div>
+        </div>
+
+        <div class="callout">
+          <b>The big idea:</b> a message gets <b>encoded</b> by the sender and <b>decoded</b> by the receiver. Both use their own knowledge, feelings, and past experiences to do it — which is exactly why the same words can land so differently for different people.
+        </div>
+
+        <div class="quiz" data-answer="1">
+          <div class="q">Why can the same sentence mean different things to the sender and receiver?</div>
+          <div class="opts">
+            <div class="opt" data-i="0"><span class="mk">A</span><span>Because words have no meaning at all.</span></div>
+            <div class="opt" data-i="1"><span class="mk">B</span><span>Because each person decodes it through their own experiences and feelings.</span></div>
+            <div class="opt" data-i="2"><span class="mk">C</span><span>Because the channel is always broken.</span></div>
+            <div class="opt" data-i="3"><span class="mk">D</span><span>Because feedback isn't part of communication.</span></div>
+          </div>
+          <div class="fb"></div>
+        </div>
+
+        <div class="lesson-foot">
+          <button class="btn btn-ghost" onclick="prev()">← Back</button>
+          <button class="btn btn-primary mark" onclick="markAndNext(this)">Mark complete →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- 3 SEVEN STEP JOURNEY ----- -->
+    <section class="lesson" data-title="The 7-step journey">
+      <div class="card">
+        <div class="eyebrow"><span class="dot"></span>Lesson 3</div>
+        <h2>The journey, step by step</h2>
+        <p class="lead">Slow the loop right down and you can see seven distinct steps a message passes through. Notice step 4 — barriers don't break communication, skilled communicators just push through them.</p>
+
+        <div class="journey" id="journey"></div>
+
+        <div class="callout coral">
+          <b>Don't skip step 4.</b> Every real message hits barriers — noise, mood, assumptions, a bad connection. Good communicators expect this and build in checks: "Did that make sense?" "What did you hear me say?"
+        </div>
+
+        <div class="quiz" data-answer="3">
+          <div class="q">In the journey, what happens at the "Overcome barrier" step?</div>
+          <div class="opts">
+            <div class="opt" data-i="0"><span class="mk">A</span><span>The message is first created in the mind.</span></div>
+            <div class="opt" data-i="1"><span class="mk">B</span><span>The receiver finally understands everything perfectly.</span></div>
+            <div class="opt" data-i="2"><span class="mk">C</span><span>The sender chooses a channel.</span></div>
+            <div class="opt" data-i="3"><span class="mk">D</span><span>The message meets internal and external obstacles that must be worked through.</span></div>
+          </div>
+          <div class="fb"></div>
+        </div>
+
+        <div class="lesson-foot">
+          <button class="btn btn-ghost" onclick="prev()">← Back</button>
+          <button class="btn btn-primary mark" onclick="markAndNext(this)">Mark complete →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- 4 CHANNELS ----- -->
+    <section class="lesson" data-title="Channels of communication">
+      <div class="card">
+        <div class="eyebrow"><span class="dot"></span>Lesson 4</div>
+        <h2>Channels: how we send messages</h2>
+        <p class="lead">The channel is the road your message travels. The same words on different roads arrive differently — choosing the right one is half the skill.</p>
+
+        <div class="grid g2" id="channels"></div>
+
+        <div class="callout teal">
+          <b>Rule of thumb:</b> the heavier or more emotional the message, the richer the channel it deserves. Breaking bad news, sorting out a fight, saying something that really matters? Voice or face-to-face beats a text every time, because tone and body language travel with it.
+        </div>
+
+        <div class="quiz" data-answer="0">
+          <div class="q">Your friend is upset after an argument. Which channel is usually best to sort it out?</div>
+          <div class="opts">
+            <div class="opt" data-i="0"><span class="mk">A</span><span>A call or face-to-face, so tone and expression come through.</span></div>
+            <div class="opt" data-i="1"><span class="mk">B</span><span>A long, detailed text at 2am.</span></div>
+            <div class="opt" data-i="2"><span class="mk">C</span><span>A public comment on their post.</span></div>
+            <div class="opt" data-i="3"><span class="mk">D</span><span>A meme with no words.</span></div>
+          </div>
+          <div class="fb"></div>
+        </div>
+
+        <div class="reflect" data-key="r4">
+          <label>Your channel habits</label>
+          <p class="small" style="margin:-4px 0 8px">Which channel do you reach for too often? When might switching channels have helped a conversation go better?</p>
+          <textarea placeholder="Your thoughts…"></textarea>
+          <div class="saved-tag"></div>
+        </div>
+
+        <div class="lesson-foot">
+          <button class="btn btn-ghost" onclick="prev()">← Back</button>
+          <button class="btn btn-primary mark" onclick="markAndNext(this)">Mark complete →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- 5 INFLUENCES ----- -->
+    <section class="lesson" data-title="What shapes us">
+      <div class="card">
+        <div class="eyebrow"><span class="dot"></span>Lesson 5</div>
+        <h2>What shapes the sender and receiver</h2>
+        <p class="lead">Nobody communicates from nowhere. Both people bring an invisible backpack of influences that shape how they encode and decode every message.</p>
+
+        <div class="grid g2">
+          <div class="tile" style="background:#F3FAFA;border-color:#BFE3E3">
+            <h4 style="color:var(--teal-deep)">🧑‍🏫 The sender brings…</h4>
+            <p class="small" style="margin:0">…all of this into <em>how they say it</em>.</p>
+          </div>
+          <div class="tile" style="background:#F8F4FE;border-color:#D8C9F0">
+            <h4 style="color:var(--violet)">🧑‍🎓 The receiver brings…</h4>
+            <p class="small" style="margin:0">…all of this into <em>how they hear it</em>.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:16px" id="influenceChips"></div>
+
+        <div class="scene"><b>Scene:</b> A teacher says "you need to take this more seriously." To a student who's exhausted and anxious, it sounds like an attack. To a confident student who trusts the teacher, it sounds like helpful pushing. Same words, two different backpacks.</div>
+
+        <div class="callout">
+          <b>The skill:</b> you can't see someone's backpack, but you can stay curious about it. "What's going on for them right now?" is one of the most powerful questions in communication.
+        </div>
+
+        <div class="quiz" data-answer="2">
+          <div class="q">Two people hear the exact same comment very differently. The infographic says this is mainly because of their…</div>
+          <div class="opts">
+            <div class="opt" data-i="0"><span class="mk">A</span><span>height and age only.</span></div>
+            <div class="opt" data-i="1"><span class="mk">B</span><span>choice of phone brand.</span></div>
+            <div class="opt" data-i="2"><span class="mk">C</span><span>knowledge, culture, values, feelings, and past experiences.</span></div>
+            <div class="opt" data-i="3"><span class="mk">D</span><span>internet speed.</span></div>
+          </div>
+          <div class="fb"></div>
+        </div>
+
+        <div class="lesson-foot">
+          <button class="btn btn-ghost" onclick="prev()">← Back</button>
+          <button class="btn btn-primary mark" onclick="markAndNext(this)">Mark complete →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- 6 BARRIERS ----- -->
+    <section class="lesson" data-title="Barriers to communication">
+      <div class="card">
+        <div class="eyebrow"><span class="dot"></span>Lesson 6</div>
+        <h2>Barriers: what gets in the way</h2>
+        <p class="lead">Barriers are anything that distorts the message between two minds. Some come from <em>inside</em> a person; some come from the <em>surroundings</em>. Spotting which kind it is tells you how to fix it.</p>
+
+        <div class="tabs">
+          <button class="tab on" data-tab="int" onclick="setTab(this,'int')">🧠 Internal barriers</button>
+          <button class="tab" data-tab="ext" onclick="setTab(this,'ext')">🌍 External barriers</button>
+        </div>
+
+        <div class="tabpane on" data-pane="int">
+          <p class="small" style="margin-top:-4px">Internal barriers arise <b>within the person</b>. Tap each to open it.</p>
+          <div id="intAcc"></div>
+        </div>
+
+        <div class="tabpane" data-pane="ext">
+          <p class="small" style="margin-top:-4px">External barriers arise from <b>the surroundings</b> — the situation around the conversation.</p>
+          <div class="grid g2" id="extGrid"></div>
+        </div>
+
+        <div class="callout coral" style="margin-top:18px">
+          <b>Fix-it move:</b> internal barriers usually need <em>self-awareness</em> ("I'm reacting from anger / I assumed too fast"). External barriers usually need a <em>change of setting</em> ("let's talk somewhere quieter / let me say that more clearly").
+        </div>
+
+        <div class="quiz" data-answer="1">
+          <div class="q">"It's so loud in here I can't hear you" is which kind of barrier?</div>
+          <div class="opts">
+            <div class="opt" data-i="0"><span class="mk">A</span><span>Internal — emotional.</span></div>
+            <div class="opt" data-i="1"><span class="mk">B</span><span>External — environment / noise.</span></div>
+            <div class="opt" data-i="2"><span class="mk">C</span><span>Internal — attitudinal.</span></div>
+            <div class="opt" data-i="3"><span class="mk">D</span><span>It isn't a barrier.</span></div>
+          </div>
+          <div class="fb"></div>
+        </div>
+
+        <div class="reflect" data-key="r6">
+          <label>Spot your own barrier</label>
+          <p class="small" style="margin:-4px 0 8px">Which barrier trips <em>you</em> up most — maybe assumptions, defensiveness, ego, distraction, or stress? What's one small thing you could do about it?</p>
+          <textarea placeholder="Your thoughts…"></textarea>
+          <div class="saved-tag"></div>
+        </div>
+
+        <div class="lesson-foot">
+          <button class="btn btn-ghost" onclick="prev()">← Back</button>
+          <button class="btn btn-primary mark" onclick="markAndNext(this)">Mark complete →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- 7 KEYS ----- -->
+    <section class="lesson" data-title="The 7 keys">
+      <div class="card">
+        <div class="eyebrow"><span class="dot"></span>Lesson 7</div>
+        <h2>The seven keys to great communication</h2>
+        <p class="lead">If barriers are what go wrong, these are what go right. Each one comes with a small move you can practise this week.</p>
+
+        <div class="grid g2" id="keys"></div>
+
+        <div class="quote">"Great communication is not just about speaking well, but about understanding <span class="heart">deeply.</span> ❤"</div>
+
+        <div class="quiz" data-answer="0">
+          <div class="q">Which of these best describes <em>active listening</em>?</div>
+          <div class="opts">
+            <div class="opt" data-i="0"><span class="mk">A</span><span>Fully focusing, checking you understood, and showing the person you're with them.</span></div>
+            <div class="opt" data-i="1"><span class="mk">B</span><span>Waiting silently for your turn to talk.</span></div>
+            <div class="opt" data-i="2"><span class="mk">C</span><span>Nodding while scrolling your phone.</span></div>
+            <div class="opt" data-i="3"><span class="mk">D</span><span>Repeating their words back like a parrot, word for word.</span></div>
+          </div>
+          <div class="fb"></div>
+        </div>
+
+        <div class="lesson-foot">
+          <button class="btn btn-ghost" onclick="prev()">← Back</button>
+          <button class="btn btn-primary mark" onclick="markAndNext(this)">Mark complete →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- 8 OUTCOME + INFOGRAPHIC ----- -->
+    <section class="lesson" data-title="Putting it together">
+      <div class="card">
+        <div class="eyebrow"><span class="dot"></span>Lesson 8</div>
+        <h2>Putting it all together</h2>
+        <p class="lead">When the loop completes — message sent, barriers cleared, message understood, feedback given — something good happens.</p>
+
+        <div class="grid g3">
+          <div class="tile" style="text-align:center"><span class="ico">🧩</span><h4>Understanding happens</h4><p class="small">Two minds end up holding the same picture.</p></div>
+          <div class="tile" style="text-align:center"><span class="ico">🌱</span><h4>Relationships grow</h4><p class="small">People feel heard, so trust deepens.</p></div>
+          <div class="tile" style="text-align:center"><span class="ico">🎯</span><h4>Goals are achieved</h4><p class="small">Things actually get done, together.</p></div>
+        </div>
+
+        <h3 style="margin-top:26px">The whole picture, on one page</h3>
+        <p>Everything in this module — the loop, the channels, the influences, the barriers, the keys — comes together in this map. Take it in as a whole, then tap it to open the full-size version.</p>
+        <div class="infographic">
+          <figure>
+            <a class="fig-link" href="assets/communication-infographic.png" target="_blank" rel="noopener" title="Open full-size infographic">
+              <img src="assets/communication-infographic.png" alt="The Process of Communication infographic: influences on sender and receiver, internal and external barriers, the communication loop, the 7-step journey, the keys to effective communication, and the outcome." loading="lazy">
+            </a>
+            <figcaption>The Process of Communication — Brain Behaviour Academy. <a href="assets/communication-infographic.png" target="_blank" rel="noopener">Open full size ↗</a></figcaption>
+          </figure>
+        </div>
+
+        <h3 style="margin-top:26px">Your one-page recap</h3>
+        <div class="grid g2">
+          <div class="tile"><h4>🔁 The loop</h4><p class="small">Thought → encode → channel → receive → decode → feedback, and round again.</p></div>
+          <div class="tile"><h4>📡 The channels</h4><p class="small">Verbal, non-verbal, written, digital — match the channel to the message.</p></div>
+          <div class="tile"><h4>🎒 The backpacks</h4><p class="small">Both people bring knowledge, culture, values, feelings, and past experiences.</p></div>
+          <div class="tile"><h4>🧱 The barriers</h4><p class="small">Internal (in the person) and external (in the surroundings).</p></div>
+          <div class="tile"><h4>🔑 The keys</h4><p class="small">Clarity, listening, empathy, feedback, respect, trust, right channel.</p></div>
+          <div class="tile"><h4>❤ The aim</h4><p class="small">Not speaking well — being <em>understood deeply</em>.</p></div>
+        </div>
+
+        <div class="reflect" data-key="r8">
+          <label>Your communication goal</label>
+          <p class="small" style="margin:-4px 0 8px">Name one specific thing you'll try in your next tricky conversation, using something from this module.</p>
+          <textarea placeholder="My next move is…"></textarea>
+          <div class="saved-tag"></div>
+        </div>
+
+        <div class="lesson-foot">
+          <button class="btn btn-ghost" onclick="prev()">← Back</button>
+          <button class="btn btn-primary mark" onclick="markAndNext(this)">Mark complete → Final check</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- 9 FINAL CHECK ----- -->
+    <section class="lesson" data-title="Final check">
+      <div class="card">
+        <div class="eyebrow"><span class="dot"></span>Final check</div>
+        <h2>Show what you know</h2>
+        <p class="lead">Eight questions covering the whole module. Pick an answer for each — you'll see your score at the end.</p>
+        <div id="finalQuiz"></div>
+        <div style="text-align:center;margin-top:14px">
+          <button class="btn btn-primary" id="finalBtn" onclick="scoreFinal()">Check my answers</button>
+        </div>
+        <div class="scorebox" id="scoreBox">
+          <div class="small" style="text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:var(--muted)">Your score</div>
+          <div class="pct" id="scorePct">0%</div>
+          <div id="scoreMsg" style="font-weight:700;color:var(--ink-soft)"></div>
+          <div class="badge" id="scoreBadge" style="display:none">🏅 Module complete</div>
+          <div style="margin-top:14px">
+            <button class="btn btn-ghost" onclick="retryFinal()">Try again</button>
+          </div>
+        </div>
+        <div class="lesson-foot" style="margin-top:18px">
+          <button class="btn btn-ghost" onclick="prev()">← Back</button>
+          <button class="btn btn-ghost" onclick="goto(0)">Back to start</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="foot">
+  <img src="assets/bba-logo.png" alt="Brain Behaviour Academy logo">
+  <p>Talk It Out · The Process of Communication — a self-learning module by <b>Brain Behaviour Academy</b>.<br>
+  Your progress and notes are saved only on this device. <a href="#" onclick="resetAll();return false;">Reset everything</a>.</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
